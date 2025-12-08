@@ -29,6 +29,10 @@ The text processing is done via OpenAI ChatGPT 5 Nano model via the api. Nano is
 The output from whisper transcription is always messy, so the text is first cleaned up before summarization. This is done simultaneously for multiple chunks with threading, again to save on processing time. 
 The individual chunks are cleaned and summarized, and then finally all summaries are combined into a single summary for the user.
 
+## Testing
+
+The model was tested with video and audio files with length up to one hour. With longer files the processing time increased, but even with the longest tried video of one hour, the app took 10 minutes to output the summary. This was considerably faster with shorter files. 
+
 ## Future improvements
 
 Main improvements would be to use local models instead of the api. Using the local ChatGpt and Whisper models would improve cost-efficiency, and maintain data security.
