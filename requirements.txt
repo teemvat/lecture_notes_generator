@@ -3,3 +3,6 @@ openai-whisper==20230314
 ffmpeg-python==0.2.0
 openai~=2.8.1
 dotenv~=0.9.9
+
+pydub~=0.25.1
+python-dotenv~=1.2.1
